@@ -1,5 +1,7 @@
 # rb101_stringy_strings.rb
 
+
+# my solution
 def stringy(number)
   counter = 0
   text = ""
@@ -18,3 +20,19 @@ end
 puts stringy(5)
 puts stringy(4)
 puts stringy(100)
+
+
+# replicating LS solution
+
+def stringster(number)
+  output = []
+  number.times do |count|
+    next_char = count.even? ? 1 : 0 
+    output << next_char
+  end
+  output.join
+end
+
+puts stringster(5)
+puts stringster(4)
+puts stringster(100)
